@@ -20,6 +20,6 @@ IcedShark is a project to learn offensive securtity tactics during my spare time
  
  # privEsc.bat
  - privilege escalation batch script that checks for unquoted service paths that can lead to a binary being placed in the corresponding directory allowing for a privileged user 
- to be added giving the secuiryt professional access to a higher privilege level. This is a very short program that i am working on adding to IcedShark.ps1 but i am having issues with searching for the unqoted paths due to the powershell integrated scripting environment. Any help would be appreciated.
+ to be added giving the security professional access to a higher privilege level. This is a very short program that i am working on adding to IcedShark.ps1 but i am having issues with searching for the unqoted paths due to the powershell integrated scripting environment. Any help would be appreciated.
  
  
